@@ -50,13 +50,13 @@ class SandwichMachine:
        # print(hamCost)
         cheeseCost = self.machine_resources['ham'] - ingredients['ingredients']['cheese']
        # print(cheeseCost)
-        if (breadCost < 0):
+        if (breadCost <= 0):
             print("Not enough bread for this order. Please restock")
             return False
-        if (hamCost < 0):
+        if (hamCost <= 0):
             print("Not enough ham for this order. Please restock")
             return False
-        if (cheeseCost < 0):
+        if (cheeseCost <= 0):
             print("Not enough cheese for this order. Please restock")
             return False
         return True
